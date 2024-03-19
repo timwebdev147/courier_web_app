@@ -1,0 +1,139 @@
+.itemLists{
+    >div{
+        display: flex;
+        font-size: small;
+        text-transform: uppercase;
+        justify-content: flex-start;
+        position: relative;
+        margin-top: 20px;
+        >div:nth-of-type(2){
+            position: absolute;
+            right: 100px;
+        }
+        >div:last-of-type{
+            position: absolute;
+            right: 0;
+        }
+        &.tags{
+            height: 40px;
+            font-weight: 800;
+            >div:first-of-type{
+                width: 300px;
+                text-decoration: underline;
+            }
+            .midCont{
+                display: flex;
+                width: 600px;
+                div{
+                    text-decoration: underline;
+                    width: 140px;
+                    margin-right: 50px;
+                }
+            }
+            >div:last-of-type{
+                text-decoration: underline;
+                width: 60px;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+        &.product{
+            background-color: white;
+            min-height: 60px;
+            align-items: center;
+            .name{
+                width: 240px;
+                padding-left: 15px;
+                display: flex;
+                justify-content: space-between;
+                word-wrap: break-word;
+                .iconCont{
+                    margin-right: 10px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #f1effa;
+                    border-radius: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #003c92;
+                    font-size: medium;
+                }
+                .text{
+                    width: 175px;
+                    p:first-of-type{
+                        font-weight: 500;
+                        font-size: small;
+                        text-transform: initial;
+                    }
+                    p:last-of-type{
+                        color: #98a9bc;
+                        font-size: small;
+                        text-transform: initial;
+                    }
+                }
+            }
+            .midCont{
+                display: flex;
+                width: 600px;
+                div{
+                    width: 150px;
+                    text-align: left;
+                    margin-right: 50px;
+                }
+            }
+            >div:nth-of-type(3){
+                width: 60px;
+                display: flex;
+                justify-content: flex-start;
+                cursor: pointer;
+                // position: relative;
+                .actions{
+                    // display: none;
+                    cursor: initial;
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    width: 200px;
+                    box-shadow: 2px 2px 4px grey;
+                    z-index: 4;
+                    background-color: white;
+                    padding: 10px;
+                    div{
+                        cursor: pointer;
+                        padding: 5px;
+                        span{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .hide{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.total{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    align-items: center;
+    div{
+        display: flex;
+        align-items: center;
+        width: 100px;
+        justify-content: space-between;
+        span{
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            color: #cad2db;
+            font-size: x-large;
+        }
+    }
+}

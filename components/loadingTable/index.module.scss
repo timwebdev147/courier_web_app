@@ -1,0 +1,121 @@
+.productLists{
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    >div{
+        display: flex;
+        font-size: small;
+        text-transform: uppercase;
+        justify-content: flex-start;
+        position: relative;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        >div:nth-of-type(2){
+            position: absolute;
+            right: 100px;
+        }
+        >div:last-of-type{
+            position: absolute;
+            right: 0;
+        }
+        &.tags{
+            >div:first-of-type{
+                width: 300px;
+            }
+            .midCont{
+                display: flex;
+                width: 600px;
+                div{
+                    width: 150px;
+                    margin-right: 50px;
+                }
+            }
+            >div:last-of-type{
+                width: 60px;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+        &.product{
+            background-color: white;
+            min-height: 60px;
+            width: 100%;
+            align-items: center;
+            .name{
+                width: 240px;
+                padding-left: 15px;
+                display: flex;
+                justify-content: space-between;
+                word-wrap: break-word;
+                .iconCont{
+                    margin-right: 10px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #f1effa;
+                    border-radius: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #c66f01;
+                    font-size: medium;
+                }
+                .text{
+                    width: 175px;
+                    p:first-of-type{
+                        font-weight: 500;
+                        font-size: small;
+                        text-transform: initial;
+                    }
+                    p:last-of-type{
+                        color: #98a9bc;
+                        font-size: small;
+                        text-transform: initial;
+                    }
+                }
+            }
+            .midCont{
+                display: flex;
+                width: 600px;
+                div{
+                    width: 150px;
+                    text-align: left;
+                    margin-right: 50px;
+                }
+            }
+            >div:nth-of-type(3){
+                width: 60px;
+                display: flex;
+                justify-content: flex-start;
+                // position: relative;
+                >span{
+                    
+                    cursor: pointer;
+                }
+                .actions{
+                    // display: none;
+                    cursor: initial;
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    width: 200px;
+                    box-shadow: 2px 2px 4px grey;
+                    z-index: 11;
+                    background-color: white;
+                    padding: 10px;
+                    div{
+                        cursor: pointer;
+                        padding: 5px;
+                        span{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .hide{
+                    display: none;
+                }
+            }
+        }
+    }
+}

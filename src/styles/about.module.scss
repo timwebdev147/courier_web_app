@@ -1,0 +1,170 @@
+@use 'mediaQueries.module.scss';
+
+.firstContainer{
+    padding: 80px;
+    @include mediaQueries.for-phone-only{
+        padding: 50px 20px;
+    }
+    .firstRow{
+        display: flex;
+        justify-content: space-between;
+        @include mediaQueries.for-phone-only{
+            flex-direction: column;
+        }
+        >div:first-of-type{
+            width: 45%;
+            border-left: 4px solid var(--button);
+            height: 280px;
+            padding-left: 30px;
+            padding-top: 20px;
+            box-sizing: border-box;
+            @include mediaQueries.for-phone-only{
+                width: 100%;
+                padding-top: 0;
+            }
+            h1{
+                font-size: 40px;
+                margin-bottom: 20px;
+                @include mediaQueries.for-phone-only{
+                    margin-top: 10px;
+                }
+            }
+            h2{
+                margin: 0;
+                font-size: 40px;
+                opacity: .6;
+                font-weight: 400;
+                @include mediaQueries.for-phone-only{
+                    font-size: 30px;
+                }
+            }
+            li{
+                margin-left: 10px;
+                font-size: 20px;
+                opacity: .6;
+                line-height: 1.2;
+            }
+        }
+        >div:last-of-type{
+            padding-top: 20px;
+            width: 45%;
+            display: flex;
+            @include mediaQueries.for-phone-only{
+                flex-direction: column;
+                margin-top: 50px;
+                width: 100%;
+                align-items: center;
+            }
+            .icon{
+                color: var(--button);
+                font-size: 60px;
+                margin-right: 10px;
+            }
+            h1{
+                margin-top: 5px;
+                font-size: x-large;
+            }
+            p{
+                font-size: large;
+                opacity: .6;
+            }
+        }
+    }
+    .secondRow{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        @include mediaQueries.for-phone-only{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            height: 600px;
+        }
+        >div{
+            width: 45%;
+            display: flex;
+            box-sizing: border-box;
+            padding-left: 20px;
+            @include mediaQueries.for-phone-only{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .icon{
+                font-size: 60px;
+                color: var(--button);
+                margin-right: 10px;
+            }
+            h1{
+                margin: 0;
+                font-size: larger;
+            }
+            p{
+                font-size: 17px;
+                line-height: 1.5;
+                opacity: .6;
+            }
+        }
+    }
+}
+
+.secondContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 70px;
+    height: 600px;
+    box-sizing: border-box;
+    @include mediaQueries.for-phone-only{
+        flex-direction: column;
+        height: 1000px;
+        padding: 40px 0;
+    }
+    .imageContainer{
+        width: 48%;
+        border: 1px solid black;
+        height: 350px;
+        @include mediaQueries.for-phone-only{
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    .secondColumn{
+        width: 49%;
+        @include mediaQueries.for-phone-only{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 900;
+        }
+        p{
+            font-size: 20px;
+            opacity: .6;
+            line-height: 1.2;
+            margin-bottom: 70px;
+        }
+        a{
+            padding: 15px 30px;
+            background-color: var(--button);
+            color: white;
+            font-size: large;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: 0.5s;
+            &:hover{
+                background-color: black;
+                transition: 0.5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use "./mediaQueries.module.scss";
+
+.logo_container{
+    // overflow: hidden;
+    width: 200px;
+    display: flex;
+    // align-items: center;
+    height: 100px;
+    @include mediaQueries.for-phone-only{
+      width: 100px;       
+      align-items: flex-end;
+      padding-top: 7px;
+    }
+    img{
+      width: 130%;
+      height: 120%;
+      // width: 150px;
+      // height: 130%;
+      object-fit: contain;
+      @include mediaQueries.for-phone-only{
+        width: 100%;
+      }
+    }
+    span{
+      opacity: 0.9;
+      font-size: x-large;
+      position: relative;
+      left: -30px;
+      font-weight: 600;
+      color: var(--links_color);
+      text-transform: uppercase;
+    }
+  }

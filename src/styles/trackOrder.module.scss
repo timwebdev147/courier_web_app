@@ -1,0 +1,67 @@
+@use './mediaQueries.module.scss';
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--offwhite_1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mediaQueries.for-phone-only{
+        height: 80vh;
+    }
+    >div{
+        width: 700px;
+        padding: 20px;
+        border: 1px solid grey;
+        @include mediaQueries.for-phone-only{
+            width: 100%;
+            border: none;
+        }
+        h1{
+            text-align: center;
+            @include mediaQueries.for-phone-only{
+                font-size: x-large;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            @include mediaQueries.for-phone-only{
+                flex-direction: column;
+            }
+            input{
+                width: 400px;
+                height: 50px;
+                @include mediaQueries.for-phone-only{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+            button{
+                background-color: var(--button);
+                border-radius: 5px;
+                color: white;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                height: 50px;
+                font-size: large;
+                border: none;
+                transition: 0.5s;
+                &:hover{
+                    transition: 0.5s;
+                    background-color: var(--links_color);
+                }
+                @include mediaQueries.for-phone-only{
+                    width: 100%;
+                }
+
+            }
+        }
+        p{
+            font-size: large;
+        }
+    }
+}

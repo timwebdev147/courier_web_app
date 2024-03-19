@@ -1,0 +1,91 @@
+@use 'mediaQueries.module.scss';
+
+
+.footer{
+    >div{
+        padding: 0 100px;
+        box-sizing: border-box;
+        color: white;
+        @include mediaQueries.for-phone-only{
+            padding: 50px 20px;
+        }
+    }
+    .firstFooter{
+        background-color: #2f2f2f;
+        height: 300px;
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include mediaQueries.for-phone-only{
+            flex-direction: column;
+            height: 600px;
+            justify-content: initial;
+        }
+        h1{
+            border-left: 7px solid var(--button);
+            padding-left: 10px;
+            box-sizing: border-box;
+            font-size: 30px;
+            @include mediaQueries.for-phone-only{
+                font-size: 25px;
+            }
+        }
+        h2{
+            font-weight: 400;
+            font-size: x-large;
+            @include mediaQueries.for-phone-only{
+                // font-size: large;
+            }
+        }
+        p{
+            font-size: large;
+            @include mediaQueries.for-phone-only{
+                font-size: medium;
+                line-height: 1.8;
+            }
+        }
+
+        .firstSect{
+            width: 40%;
+            @include mediaQueries.for-phone-only{
+                width: 100%;
+            }
+        }
+
+        .otherSectContainer{
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            @include mediaQueries.for-phone-only{
+                width: 100%;
+                flex-direction: column;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                a{
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    font-size: large;
+                    margin-bottom: 10px;
+                    .icon{
+                        color: var(--button);
+                        margin-right: 15px;
+                        margin-left: -7px;
+                    }
+                }
+            }
+        }
+    }
+    .lastFooter{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-size: large;
+    }
+}
