@@ -8,7 +8,7 @@ const Logo:React.FC = () => {
     return(
         
         <div className={styles.logo_container}>
-        <Image src={logo} alt={'Crystal Royal Global Logistics'} width={0} height={0} />
+        <Image src={logo} alt={'Crystal Royal Logistics'} width={0} height={0} />
         </div>
     )
 }

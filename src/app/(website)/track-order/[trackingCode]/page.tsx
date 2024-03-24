@@ -104,7 +104,7 @@ const orderInfo:React.FC = () => {
                 </div>
                 <div>
                     <p>Shipping BY:</p>
-                    <p>Crystal Royal Global Logistics,| +447442457544</p>
+                    <p>Crystal Royal Logistics,| +447442457544</p>
                 </div>
                 <div>
                     <p>Status</p>

@@ -61,7 +61,7 @@ const Home:React.FC = () => {
 
   const testimonials:testimonialType[] = [
     {
-      testimony: "“Crystal Royal Global Logistics offers cost effective shipping for my company and needs and they can get everything done on the same day”",
+      testimony: "“Crystal Royal Logistics offers cost effective shipping for my company and needs and they can get everything done on the same day”",
       testifier: "Eric A. Wheatley",
       image: <Image className={styles.image} width={0} height={0} src={person1} alt=""/>
     },
@@ -133,7 +133,7 @@ const Home:React.FC = () => {
         <div className={styles.info_holder}>
           <h1>Our Services</h1>
           <p>Whether you need a package delivered across town 
-            or 100 miles away, Crystal Royal Global Logistics offers a variety 
+            or 100 miles away, Crystal Royal Logistics offers a variety 
             of on-demand and scheduled services to meet your delivery needs. 
             Our uniformed drivers are radio dispatched and can be on their 
             way within minutes of your call. You can certainly depend on 

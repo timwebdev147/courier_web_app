@@ -34,7 +34,7 @@ const Footer:React.FC = () => {
                 </div>
             </div>
             <div className={styles.lastFooter}>
-                Copyright©| Crystal Royal Global Logistics
+                Copyright©| Crystal Royal Logistics
             </div>
         </footer>
     )
