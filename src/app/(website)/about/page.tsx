@@ -33,7 +33,7 @@ export default function About() {
         <div>
           <CheckBox className={styles.icon} />
           <div>
-            <h1>CALL CENTER</h1>
+            <h1>CUSTOMER SERVICE</h1>
             <p>+44 7442 457544 </p>
           </div>
         </div>

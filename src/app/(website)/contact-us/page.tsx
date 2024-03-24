@@ -102,7 +102,7 @@ const ContactUs:React.FC = () => {
               <div>
                 <h1>OUR LOCATIONS</h1>
                 <p>
-                USA Carlofornia
+                USA Carlifornia
                 </p>
                 <p>UK London</p>
               </div>

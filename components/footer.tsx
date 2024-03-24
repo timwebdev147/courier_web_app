@@ -27,7 +27,6 @@ const Footer:React.FC = () => {
                     </div>
                     <div>
                         <h1>CONTACT US</h1>
-                        <a href="">our location.......</a>
                         <a href="tel:+">+44 7442 457544</a>
                         <a href="mailto:">contact@crystalroyallogistics.org</a>
                     </div>

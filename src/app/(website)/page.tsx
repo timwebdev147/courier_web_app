@@ -21,7 +21,7 @@ const Home:React.FC = () => {
   const firstInfo:firstInfo[] = [
     {
       icon: <Call className={styles.icon} />,
-      title: 'CALL CENTER',
+      title: 'CUSTOMER SERVICE',
       text: `Give us a free call \n +44 7442 457544`
     },
     {
