@@ -123,7 +123,7 @@ const ContactUs:React.FC = () => {
               <div>
                 <h1>HOTLINE 24/7 </h1>
                 <p>
-                  +44 7442 457544  
+                  +44 7765 853883
                 </p>
                 <p>
                   Contact@crystalroyallogistics.org

@@ -27,8 +27,8 @@ const Footer:React.FC = () => {
                     </div>
                     <div>
                         <h1>CONTACT US</h1>
-                        <a href="tel:+">+44 7442 457544</a>
-                        <a href="mailto:">contact@crystalroyallogistics.org</a>
+                        <a href="tel:+447765853883">+44 7765 853883</a>
+                        <a href="mailto:contact@crystalroyallogistics.org">contact@crystalroyallogistics.org</a>
                     </div>
                 </div>
             </div>

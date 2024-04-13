@@ -34,7 +34,7 @@ export default function About() {
           <CheckBox className={styles.icon} />
           <div>
             <h1>CUSTOMER SERVICE</h1>
-            <p>+44 7442 457544 </p>
+            <p>+44 7765 853883 </p>
           </div>
         </div>
         </div>
@@ -74,7 +74,7 @@ export default function About() {
         <div className={styles.secondColumn}>
           <h1>Become Our Partners</h1>
           <p>
-            We are a shipping company located in California. We accept Investments 
+            We are a shipping company located in London. We accept Investments
             from any one who is willing and able to invest in Central courier . 
             Hence you become a share holder at our company . Having invested in us 
             will give you as many benefits as you can count . You will be on a steady 

@@ -22,7 +22,7 @@ const Home:React.FC = () => {
     {
       icon: <Call className={styles.icon} />,
       title: 'CUSTOMER SERVICE',
-      text: `Give us a free call \n +44 7442 457544`
+      text: `Give us a free call \n +44 7765 853883`
     },
     {
       icon: <EventAvailable className={styles.icon} />,
@@ -37,7 +37,7 @@ const Home:React.FC = () => {
     {
       icon: <Language className={styles.icon} />,
       title: 'GLOBAL OFFICE',
-      text: 'Japan Head Quarter In New Hall In Tokyo City'
+      text: 'London, UK'
     }
   ]
 
